@@ -1,4 +1,3 @@
-// components/FlashSaleSlider.js
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
@@ -23,7 +22,7 @@ const AllProducts = () => {
   };
 
   const settings = {
-    spaceBetween: 30,
+    spaceBetween: 20,
     loop: true,
     breakpoints: {
       1024: {
@@ -54,7 +53,6 @@ const AllProducts = () => {
           <div className="flex-grow h-px bg-gray-300"></div>
         </div>
 
-        {/* Slider with arrows */}
         <div className="relative">
           <Swiper modules={[Autoplay]} {...settings}>
             {allReviews.map((item) => (
@@ -64,7 +62,6 @@ const AllProducts = () => {
             ))}
           </Swiper>
 
-          {/* Left Arrow */}
           <button
             onClick={handleLeftClick}
             className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-[#F26924] hover:bg-[#dd5815] p-4 rounded-full text-black z-10 shadow-md hidden md:block"
@@ -72,7 +69,6 @@ const AllProducts = () => {
             <FaArrowLeft className="text-xl" />
           </button>
 
-          {/* Right Arrow */}
           <button
             onClick={handleRightClick}
             className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-gray-200 hover:bg-[#dd5815] p-4 rounded-full text-black z-10 shadow-md hidden md:block"

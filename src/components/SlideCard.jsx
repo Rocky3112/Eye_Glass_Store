@@ -1,11 +1,15 @@
 import React from 'react';
-import { AiOutlineEye, AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai';
+import {
+  AiOutlineEye,
+  AiOutlineHeart,
+  AiOutlineShoppingCart,
+} from 'react-icons/ai';
 import { BiGitCompare } from 'react-icons/bi';
 
 const SlideCard = ({ item }) => {
   return (
     <div className="relative p-4 bg-white rounded-xl shadow-xl hover:shadow-xl transition-all duration-300 w-[300px] mx-auto h-[390px]">
-   
+     
       <span className="absolute top-8 left-3 bg-black text-white text-xs px-2 py-1 rounded-md">
         {item.discount}
       </span>
@@ -26,14 +30,21 @@ const SlideCard = ({ item }) => {
         </div>
       </div>
 
+      
       <h3 className="text-lg font-semibold text-gray-800">{item.name}</h3>
-      <p className={`text-sm ${item.inStock ? 'text-green-600' : 'text-red-600'} font-medium`}>
+      <p
+        className={`text-sm ${
+          item.inStock ? 'text-green-600' : 'text-red-600'
+        } font-medium`}
+      >
         {item.inStock ? 'In Stock' : 'Out of Stock'}
       </p>
 
       <div className="flex items-center text-sm text-blue-500 mt-1">
-        ★★★★☆ &nbsp;
-        <span className="text-gray-500 ml-1 text-xs">({item.reviews || '0'})</span>
+        ★★★★☆{' '}
+        <span className="text-gray-500 ml-1 text-xs">
+          ({item.reviews || '0'})
+        </span>
       </div>
 
       <div className="mt-2 text-sm">
