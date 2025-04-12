@@ -3,6 +3,7 @@ import EyeglassesHomePage from "./components/EyeglassesHomePage";
 import Navbar from "./components/Navbar";
 import EyeglassesCategories from "./components/EyeglassesCategories";
 import FlashSaleSlider from "./components/FlashSaleSlider";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <EyeglassesHomePage />
       <EyeglassesCategories></EyeglassesCategories>
       <FlashSaleSlider></FlashSaleSlider>
+      <Footer></Footer>
       </div>
     </div>
   );
