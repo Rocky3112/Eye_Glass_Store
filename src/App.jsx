@@ -2,6 +2,8 @@ import React from "react";
 import EyeglassesHomePage from "./components/EyeglassesHomePage";
 import Navbar from "./components/Navbar";
 import EyeglassesCategories from "./components/EyeglassesCategories";
+import FlashSaleSlider from "./components/FlashSaleSlider";
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Navbar></Navbar>
       <EyeglassesHomePage />
       <EyeglassesCategories></EyeglassesCategories>
+      <FlashSaleSlider></FlashSaleSlider>
       </div>
     </div>
   );
