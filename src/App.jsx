@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import EyeglassesCategories from "./components/EyeglassesCategories";
 import FlashSaleSlider from "./components/FlashSaleSlider";
 import Footer from "./components/Footer";
+import AllProducts from "./components/AllProducts";
+// import AllProducts from "./components/FlashSaleSlider";
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       <EyeglassesHomePage />
       <EyeglassesCategories></EyeglassesCategories>
       <FlashSaleSlider></FlashSaleSlider>
+      <AllProducts></AllProducts>
       <Footer></Footer>
       </div>
     </div>

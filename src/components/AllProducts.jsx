@@ -7,7 +7,7 @@ import { Autoplay } from 'swiper/modules';
 import SlideCard from './SlideCard';
 import { allReviews } from '../data/allReviews';
 
-const FlashSaleSlider = () => {
+const AllProducts = () => {
   const [swiper, setSwiper] = useState(null);
 
   const handleRightClick = () => {
@@ -43,13 +43,13 @@ const FlashSaleSlider = () => {
   };
 
   return (
-    <div className="bg-[#f4fdff] py-12 md:py-24 lg:py-12">
+    <div className="bg-[#f4fdff] py-12 md:py-12 lg:py-12">
       <div className="max-w-[1250px] mx-auto px-4 md:px-0">
         {/* Title with lines */}
         <div className="mb-12 flex items-center justify-center gap-4">
           <div className="flex-grow h-px bg-gray-300"></div>
           <h2 className="text-2xl md:text-4xl font-space_grotesk font-semibold text-center whitespace-nowrap">
-            Flash Sales
+            All Products
           </h2>
           <div className="flex-grow h-px bg-gray-300"></div>
         </div>
@@ -71,6 +71,8 @@ const FlashSaleSlider = () => {
           >
             <FaArrowLeft className="text-xl" />
           </button>
+
+          {/* Right Arrow */}
           <button
             onClick={handleRightClick}
             className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-gray-200 hover:bg-[#dd5815] p-4 rounded-full text-black z-10 shadow-md hidden md:block"
@@ -83,4 +85,4 @@ const FlashSaleSlider = () => {
   );
 };
 
-export default FlashSaleSlider;
+export default AllProducts;
